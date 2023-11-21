@@ -1,0 +1,1 @@
+import e from"react";var t=function(){var t=e.useState(100),r=t[0],n=t[1];return console.log("InvoiceForm"),e.createElement("div",{className:"App"},"Invoice Form ",r,e.createElement("br",null),e.createElement("button",{onClick:function(){return n(r+1)}},"Click me"))};export{t as InvoiceForm};

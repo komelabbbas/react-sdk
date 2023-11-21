@@ -1,0 +1,1 @@
+"use strict";var e=require("react");exports.InvoiceForm=function(){var r=e.useState(100),t=r[0],n=r[1];return console.log("InvoiceForm"),e.createElement("div",{className:"App"},"Invoice Form ",t,e.createElement("br",null),e.createElement("button",{onClick:function(){return n(t+1)}},"Click me"))};
