@@ -1,1 +1,20 @@
-"use strict";var e=require("react");exports.InvoiceForm=function(){var r=e.useState(100),t=r[0],n=r[1];return console.log("InvoiceForm"),e.createElement("div",{className:"App"},"Invoice Form ",t,e.createElement("br",null),e.createElement("button",{onClick:function(){return n(t+1)}},"Click me"))};
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "Badge", {
+  enumerable: true,
+  get: function get() {
+    return _Badge.default;
+  }
+});
+Object.defineProperty(exports, "Button", {
+  enumerable: true,
+  get: function get() {
+    return _Button.default;
+  }
+});
+var _Badge = _interopRequireDefault(require("./components/Badge"));
+var _Button = _interopRequireDefault(require("./components/Button"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
