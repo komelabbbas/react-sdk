@@ -1,5 +1,6 @@
 import Button from './lib/components/Button';
 import Badge from './lib/components/Badge';
+import InvoiceForm from './lib/components/InvoiceForm';
 import './App.css';
 
 function App() {
@@ -16,6 +17,10 @@ function App() {
       <br/>
      <h5>A button:</h5>
         <Button label="Enter" kind="primary"/>
+
+        <h5>InvoiceForm</h5>
+        <InvoiceForm label="Enter" kind="primary"/>
+
     </div>
   );
 }

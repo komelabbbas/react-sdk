@@ -1,12 +1,11 @@
-import { useState } from "react";
+import React from "react";
 
 const InvoiceForm = () => {
-  const [count, setCount] = useState(100);
+  const [count, setCount] = React.useState(101);
 
-  console.log("InvoiceForm");
   return (
     <div className="App">
-      Invoice Form {count}
+      Invoice Form1 {count}
       <br />
       <button onClick={() => setCount(count + 1)}>Click me</button>
     </div>
