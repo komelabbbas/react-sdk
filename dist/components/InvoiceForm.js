@@ -8,10 +8,10 @@ require("core-js/modules/web.dom-collections.iterator.js");
 var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 const InvoiceForm = () => {
-  const [count, setCount] = _react.default.useState(101);
+  const [count, setCount] = _react.default.useState(100);
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "App"
-  }, "Invoice Form112 ", count, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("button", {
+  }, "Invoice Form ", count, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("button", {
     onClick: () => setCount(count + 1)
   }, "Click me"));
 };

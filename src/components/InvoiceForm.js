@@ -1,11 +1,11 @@
 import React from "react";
 
 const InvoiceForm = () => {
-  const [count, setCount] = React.useState(101);
+  const [count, setCount] = React.useState(100);
 
   return (
     <div className="App">
-      Invoice Form112 {count}
+      Invoice Form {count}
       <br />
       <button onClick={() => setCount(count + 1)}>Click me</button>
     </div>
