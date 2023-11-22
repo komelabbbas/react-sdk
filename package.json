@@ -1,7 +1,7 @@
 {
-  "name": "@abbas/react-sdk",
-  "description": "Two test React components",
-  "author": "abbas",
+  "name": "@crater/react-sdk",
+  "description": "Crater React SDK",
+  "author": "crater",
   "keywords": [
     "react",
     "components",

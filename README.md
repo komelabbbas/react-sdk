@@ -1,17 +1,17 @@
-## A small but functional npm package
+## Crater React SDK
 
 
 ### Install
 
-Install using `npm install jawblia`
+Install using `npm install @crater/react-sdk`
 
 ### Usage 
 
-In a React app, use the Button or Badge components:  
-`import { Button } from 'jawblia'`  
-`import { Badge } from 'jawblia'` 
+In a React app, use the Invoice components:  
+`import { InvoiceForm } from '@crater/react-sdk'`  
+`import { InvoiceTable } from '@crater/react-sdk'` 
 
-#### Button props
+#### InvoiceForm props
 
 | Name        | Description      
 | ----------- | -----------      
@@ -24,7 +24,7 @@ In a React app, use the Button or Badge components:
 | onClick     | function         
 
 
-#### Badge props
+#### InvoiceTable props
 
 | Name        | Description | 
 | ----------- | ----------- |
