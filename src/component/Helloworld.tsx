@@ -16,7 +16,8 @@ export const Helloworld = ({ text }: IHelloWorld) => {
         <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
       </div>
 
-      <h1 className="text-3xl font-bold underline border-4 border-red-800">Abbas511223</h1>
+      <h1 className="text-3xl font-bold underline border-4 border-red-800">Abbas567</h1>
+      <h1 style={{ color: 'red' }}>Test</h1>
     </div>
   )
 }
