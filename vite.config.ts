@@ -39,11 +39,4 @@ export default defineConfig((configEnv) => ({
       },
     },
   },
-  css: {
-    preprocessorOptions: {
-      css: {
-        import: ['./src/styles/tailwind.css'],
-      },
-    },
-  },
 }))
