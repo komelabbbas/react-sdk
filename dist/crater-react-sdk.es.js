@@ -634,7 +634,7 @@ const xe = Z.exports.jsx, M = Z.exports.jsxs, cr = ({
       })
     }), /* @__PURE__ */ xe("h1", {
       className: "text-3xl font-bold underline border-4 border-red-800",
-      children: "Abbas"
+      children: "Abbas1"
     })]
   });
 }, dr = ({
