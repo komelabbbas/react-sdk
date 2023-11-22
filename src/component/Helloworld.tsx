@@ -1,5 +1,3 @@
-import '../styles/tailwind.css'
-
 import React from 'react'
 
 export interface IHelloWorld {
@@ -16,7 +14,7 @@ export const Helloworld = ({ text }: IHelloWorld) => {
         <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
       </div>
 
-      <h1 className="text-3xl font-bold underline border-4 border-red-800">Abbas12345</h1>
+      <h1 className="text-3xl font-bold underline border-4 border-red-800">Test</h1>
     </div>
   )
 }

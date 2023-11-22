@@ -14,7 +14,7 @@ function sr() {
   if (Oe)
     return D;
   Oe = 1;
-  var h = X, _ = Symbol.for("react.element"), S = Symbol.for("react.fragment"), m = Object.prototype.hasOwnProperty, A = h.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, I = { key: !0, ref: !0, __self: !0, __source: !0 };
+  var h = X, _ = Symbol.for("react.element"), w = Symbol.for("react.fragment"), m = Object.prototype.hasOwnProperty, A = h.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, I = { key: !0, ref: !0, __self: !0, __source: !0 };
   function P(y, f, O) {
     var v, b = {}, R = null, $ = null;
     O !== void 0 && (R = "" + O), f.key !== void 0 && (R = "" + f.key), f.ref !== void 0 && ($ = f.ref);
@@ -25,7 +25,7 @@ function sr() {
         b[v] === void 0 && (b[v] = f[v]);
     return { $$typeof: _, type: y, key: R, ref: $, props: b, _owner: A.current };
   }
-  return D.Fragment = S, D.jsx = P, D.jsxs = P, D;
+  return D.Fragment = w, D.jsx = P, D.jsxs = P, D;
 }
 var F = {};
 /**
@@ -40,11 +40,11 @@ var F = {};
 var Ce;
 function lr() {
   return Ce || (Ce = 1, process.env.NODE_ENV !== "production" && function() {
-    var h = X, _ = Symbol.for("react.element"), S = Symbol.for("react.portal"), m = Symbol.for("react.fragment"), A = Symbol.for("react.strict_mode"), I = Symbol.for("react.profiler"), P = Symbol.for("react.provider"), y = Symbol.for("react.context"), f = Symbol.for("react.forward_ref"), O = Symbol.for("react.suspense"), v = Symbol.for("react.suspense_list"), b = Symbol.for("react.memo"), R = Symbol.for("react.lazy"), $ = Symbol.for("react.offscreen"), Q = Symbol.iterator, xe = "@@iterator";
-    function Se(e) {
+    var h = X, _ = Symbol.for("react.element"), w = Symbol.for("react.portal"), m = Symbol.for("react.fragment"), A = Symbol.for("react.strict_mode"), I = Symbol.for("react.profiler"), P = Symbol.for("react.provider"), y = Symbol.for("react.context"), f = Symbol.for("react.forward_ref"), O = Symbol.for("react.suspense"), v = Symbol.for("react.suspense_list"), b = Symbol.for("react.memo"), R = Symbol.for("react.lazy"), $ = Symbol.for("react.offscreen"), Q = Symbol.iterator, Se = "@@iterator";
+    function we(e) {
       if (e === null || typeof e != "object")
         return null;
-      var r = Q && e[Q] || e[xe];
+      var r = Q && e[Q] || e[Se];
       return typeof r == "function" ? r : null;
     }
     var C = h.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
@@ -90,7 +90,7 @@ function lr() {
       switch (e) {
         case m:
           return "Fragment";
-        case S:
+        case w:
           return "Portal";
         case I:
           return "Profiler";
@@ -274,7 +274,7 @@ function lr() {
       } finally {
         q = !1, U.current = u, Ye(), Error.prepareStackTrace = o;
       }
-      var x = e ? e.displayName || e.name : "", Te = x ? W(x) : "";
+      var S = e ? e.displayName || e.name : "", Te = S ? W(S) : "";
       return typeof e == "function" && Y.set(e, Te), Te;
     }
     function Le(e, r, t) {
@@ -460,7 +460,7 @@ function lr() {
       }
     }
     var z = C.ReactCurrentOwner, ge = C.ReactDebugCurrentFrame;
-    function w(e) {
+    function x(e) {
       if (e) {
         var r = e._owner, t = N(e.type, e._source, r ? r.type : null);
         ge.setExtraStackFrame(t);
@@ -518,7 +518,7 @@ Check the top-level render call using <` + t + ">.");
           return;
         me[t] = !0;
         var n = "";
-        e && e._owner && e._owner !== z.current && (n = " It was passed a child from " + g(e._owner.type) + "."), w(e), c('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', t, n), w(null);
+        e && e._owner && e._owner !== z.current && (n = " It was passed a child from " + g(e._owner.type) + "."), x(e), c('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', t, n), x(null);
       }
     }
     function ye(e, r) {
@@ -533,7 +533,7 @@ Check the top-level render call using <` + t + ">.");
         else if (K(e))
           e._store && (e._store.validated = !0);
         else if (e) {
-          var o = Se(e);
+          var o = we(e);
           if (typeof o == "function" && o !== e.entries)
             for (var u = o.call(e), i; !(i = u.next()).done; )
               K(i.value) && _e(i.value, r);
@@ -568,11 +568,11 @@ Check the top-level render call using <` + t + ">.");
         for (var r = Object.keys(e.props), t = 0; t < r.length; t++) {
           var n = r[t];
           if (n !== "children" && n !== "key") {
-            w(e), c("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", n), w(null);
+            x(e), c("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", n), x(null);
             break;
           }
         }
-        e.ref !== null && (w(e), c("Invalid attribute `ref` supplied to `React.Fragment`."), w(null));
+        e.ref !== null && (x(e), c("Invalid attribute `ref` supplied to `React.Fragment`."), x(null));
       }
     }
     function Re(e, r, t, n, o, u) {
@@ -594,8 +594,8 @@ Check the top-level render call using <` + t + ">.");
           if (p !== void 0)
             if (n)
               if (J(p)) {
-                for (var x = 0; x < p.length; x++)
-                  ye(p[x], e);
+                for (var S = 0; S < p.length; S++)
+                  ye(p[S], e);
                 Object.freeze && Object.freeze(p);
               } else
                 c("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
@@ -618,23 +618,23 @@ Check the top-level render call using <` + t + ">.");
 (function(h) {
   process.env.NODE_ENV === "production" ? h.exports = sr() : h.exports = lr();
 })(Z);
-const we = Z.exports.jsx, M = Z.exports.jsxs, cr = ({
+const xe = Z.exports.jsx, M = Z.exports.jsxs, cr = ({
   text: h
 }) => {
-  const [_, S] = X.useState(0);
+  const [_, w] = X.useState(0);
   return /* @__PURE__ */ M("div", {
     children: [/* @__PURE__ */ M("div", {
       className: "text",
       children: ["This is test text: ", h]
-    }), /* @__PURE__ */ we("div", {
+    }), /* @__PURE__ */ xe("div", {
       className: "card",
       children: /* @__PURE__ */ M("button", {
-        onClick: () => S((m) => m + 1),
+        onClick: () => w((m) => m + 1),
         children: ["count is ", _]
       })
-    }), /* @__PURE__ */ we("h1", {
+    }), /* @__PURE__ */ xe("h1", {
       className: "text-3xl font-bold underline border-4 border-red-800",
-      children: "Abbas12345"
+      children: "Test"
     })]
   });
 }, dr = ({
