@@ -38,5 +38,19 @@ export default defineConfig((configEnv) => ({
         },
       },
     },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `@import './src/styles/tailwind.css';`,
+        },
+      },
+    },
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import './src/styles/tailwind.css';`,
+      },
+    },
   },
 }))
