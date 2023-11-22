@@ -13,6 +13,8 @@ export const Helloworld = ({ text }: IHelloWorld) => {
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
       </div>
+
+      <h1 className="text-3xl font-bold underline border">COMPONENT</h1>
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import './App.css'
+import './index.css'
 
 import React from 'react'
 
@@ -27,6 +27,8 @@ function App() {
         </p>
       </div>
       <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
+
+      <h1 className="text-3xl font-bold underline border">Hello world!</h1>
     </div>
   )
 }
