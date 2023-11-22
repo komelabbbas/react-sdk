@@ -1,5 +1,3 @@
-import './styles/tailwind.css'
-
 import React from 'react'
 
 import reactLogo from './assets/react.svg'
