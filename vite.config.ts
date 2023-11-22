@@ -22,6 +22,9 @@ export default defineConfig((configEnv) => ({
     }),
   ],
   build: {
+    css: {
+      include: ['dist/index.css', 'dist/style.css'],
+    },
     lib: {
       entry: path.join('src', 'index.ts'),
 
@@ -36,20 +39,6 @@ export default defineConfig((configEnv) => ({
           react: 'React',
           'react-dom': 'ReactDOM',
         },
-      },
-    },
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: `@import './src/styles/tailwind.css';`,
-        },
-      },
-    },
-  },
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `@import './src/styles/tailwind.css';`,
       },
     },
   },
