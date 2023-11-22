@@ -24,8 +24,7 @@
     ".": {
       "import": "./dist/crater-react-sdk.es.js",
       "require": "./dist/crater-react-sdk.umd.js"
-    },
-    "./dist/style.css": "./dist/style.css"
+    }
   },
   "main": "./dist/crater-react-sdk.umd.js",
   "module": "./dist/crater-react-sdk.es.js",
