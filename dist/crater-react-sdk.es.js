@@ -16,14 +16,14 @@ function ur() {
   Oe = 1;
   var h = X, y = Symbol.for("react.element"), P = Symbol.for("react.fragment"), m = Object.prototype.hasOwnProperty, A = h.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, I = { key: !0, ref: !0, __self: !0, __source: !0 };
   function x(_, f, O) {
-    var v, b = {}, R = null, $ = null;
+    var v, g = {}, R = null, $ = null;
     O !== void 0 && (R = "" + O), f.key !== void 0 && (R = "" + f.key), f.ref !== void 0 && ($ = f.ref);
     for (v in f)
-      m.call(f, v) && !I.hasOwnProperty(v) && (b[v] = f[v]);
+      m.call(f, v) && !I.hasOwnProperty(v) && (g[v] = f[v]);
     if (_ && _.defaultProps)
       for (v in f = _.defaultProps, f)
-        b[v] === void 0 && (b[v] = f[v]);
-    return { $$typeof: y, type: _, key: R, ref: $, props: b, _owner: A.current };
+        g[v] === void 0 && (g[v] = f[v]);
+    return { $$typeof: y, type: _, key: R, ref: $, props: g, _owner: A.current };
   }
   return D.Fragment = P, D.jsx = x, D.jsxs = x, D;
 }
@@ -40,7 +40,7 @@ var F = {};
 var Ce;
 function sr() {
   return Ce || (Ce = 1, process.env.NODE_ENV !== "production" && function() {
-    var h = X, y = Symbol.for("react.element"), P = Symbol.for("react.portal"), m = Symbol.for("react.fragment"), A = Symbol.for("react.strict_mode"), I = Symbol.for("react.profiler"), x = Symbol.for("react.provider"), _ = Symbol.for("react.context"), f = Symbol.for("react.forward_ref"), O = Symbol.for("react.suspense"), v = Symbol.for("react.suspense_list"), b = Symbol.for("react.memo"), R = Symbol.for("react.lazy"), $ = Symbol.for("react.offscreen"), Q = Symbol.iterator, Se = "@@iterator";
+    var h = X, y = Symbol.for("react.element"), P = Symbol.for("react.portal"), m = Symbol.for("react.fragment"), A = Symbol.for("react.strict_mode"), I = Symbol.for("react.profiler"), x = Symbol.for("react.provider"), _ = Symbol.for("react.context"), f = Symbol.for("react.forward_ref"), O = Symbol.for("react.suspense"), v = Symbol.for("react.suspense_list"), g = Symbol.for("react.memo"), R = Symbol.for("react.lazy"), $ = Symbol.for("react.offscreen"), Q = Symbol.iterator, Se = "@@iterator";
     function we(e) {
       if (e === null || typeof e != "object")
         return null;
@@ -68,7 +68,7 @@ function sr() {
     var xe = !1, je = !1, ke = !1, De = !1, Fe = !1, ee;
     ee = Symbol.for("react.module.reference");
     function Ae(e) {
-      return !!(typeof e == "string" || typeof e == "function" || e === m || e === I || Fe || e === A || e === O || e === v || De || e === $ || xe || je || ke || typeof e == "object" && e !== null && (e.$$typeof === R || e.$$typeof === b || e.$$typeof === x || e.$$typeof === _ || e.$$typeof === f || e.$$typeof === ee || e.getModuleId !== void 0));
+      return !!(typeof e == "string" || typeof e == "function" || e === m || e === I || Fe || e === A || e === O || e === v || De || e === $ || xe || je || ke || typeof e == "object" && e !== null && (e.$$typeof === R || e.$$typeof === g || e.$$typeof === x || e.$$typeof === _ || e.$$typeof === f || e.$$typeof === ee || e.getModuleId !== void 0));
     }
     function Ie(e, r, t) {
       var n = e.displayName;
@@ -80,7 +80,7 @@ function sr() {
     function re(e) {
       return e.displayName || "Context";
     }
-    function g(e) {
+    function b(e) {
       if (e == null)
         return null;
       if (typeof e.tag == "number" && c("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), typeof e == "function")
@@ -111,13 +111,13 @@ function sr() {
             return re(t._context) + ".Provider";
           case f:
             return Ie(e, e.render, "ForwardRef");
-          case b:
+          case g:
             var n = e.displayName || null;
-            return n !== null ? n : g(e.type) || "Memo";
+            return n !== null ? n : b(e.type) || "Memo";
           case R: {
             var o = e, u = o._payload, i = o._init;
             try {
-              return g(i(u));
+              return b(i(u));
             } catch {
               return null;
             }
@@ -301,7 +301,7 @@ function sr() {
         switch (e.$$typeof) {
           case f:
             return Ne(e.render);
-          case b:
+          case g:
             return N(e.type, r, t);
           case R: {
             var n = e, o = n._payload, u = n._init;
@@ -369,7 +369,7 @@ function sr() {
       ref: !0,
       __self: !0,
       __source: !0
-    }, he, be, G;
+    }, he, ge, G;
     G = {};
     function Je(e) {
       if (L.call(e, "ref")) {
@@ -389,8 +389,8 @@ function sr() {
     }
     function ze(e, r) {
       if (typeof e.ref == "string" && k.current && r && k.current.stateNode !== r) {
-        var t = g(k.current.type);
-        G[t] || (c('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', g(k.current.type), e.ref), G[t] = !0);
+        var t = b(k.current.type);
+        G[t] || (c('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', b(k.current.type), e.ref), G[t] = !0);
       }
     }
     function He(e, r) {
@@ -407,7 +407,7 @@ function sr() {
     function Ke(e, r) {
       {
         var t = function() {
-          be || (be = !0, c("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", r));
+          ge || (ge = !0, c("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", r));
         };
         t.isReactWarning = !0, Object.defineProperty(e, "ref", {
           get: t,
@@ -459,13 +459,13 @@ function sr() {
         return Xe(e, a, d, o, n, k.current, i);
       }
     }
-    var z = C.ReactCurrentOwner, ge = C.ReactDebugCurrentFrame;
+    var z = C.ReactCurrentOwner, be = C.ReactDebugCurrentFrame;
     function S(e) {
       if (e) {
         var r = e._owner, t = N(e.type, e._source, r ? r.type : null);
-        ge.setExtraStackFrame(t);
+        be.setExtraStackFrame(t);
       } else
-        ge.setExtraStackFrame(null);
+        be.setExtraStackFrame(null);
     }
     var H;
     H = !1;
@@ -475,7 +475,7 @@ function sr() {
     function Ee() {
       {
         if (z.current) {
-          var e = g(z.current.type);
+          var e = b(z.current.type);
           if (e)
             return `
 
@@ -518,7 +518,7 @@ Check the top-level render call using <` + t + ">.");
           return;
         me[t] = !0;
         var n = "";
-        e && e._owner && e._owner !== z.current && (n = " It was passed a child from " + g(e._owner.type) + "."), S(e), c('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', t, n), S(null);
+        e && e._owner && e._owner !== z.current && (n = " It was passed a child from " + b(e._owner.type) + "."), S(e), c('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', t, n), S(null);
       }
     }
     function _e(e, r) {
@@ -548,16 +548,16 @@ Check the top-level render call using <` + t + ">.");
         var t;
         if (typeof r == "function")
           t = r.propTypes;
-        else if (typeof r == "object" && (r.$$typeof === f || r.$$typeof === b))
+        else if (typeof r == "object" && (r.$$typeof === f || r.$$typeof === g))
           t = r.propTypes;
         else
           return;
         if (t) {
-          var n = g(r);
+          var n = b(r);
           Ve(t, e.props, "prop", n, e);
         } else if (r.PropTypes !== void 0 && !H) {
           H = !0;
-          var o = g(r);
+          var o = b(r);
           c("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", o || "Unknown");
         }
         typeof r.getDefaultProps == "function" && !r.getDefaultProps.isReactClassApproved && c("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
@@ -584,7 +584,7 @@ Check the top-level render call using <` + t + ">.");
           var d = Qe(o);
           d ? a += d : a += Ee();
           var s;
-          e === null ? s = "null" : J(e) ? s = "array" : e !== void 0 && e.$$typeof === y ? (s = "<" + (g(e.type) || "Unknown") + " />", a = " Did you accidentally export a JSX literal instead of a component?") : s = typeof e, c("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", s, a);
+          e === null ? s = "null" : J(e) ? s = "array" : e !== void 0 && e.$$typeof === y ? (s = "<" + (b(e.type) || "Unknown") + " />", a = " Did you accidentally export a JSX literal instead of a component?") : s = typeof e, c("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", s, a);
         }
         var l = Ze(e, r, t, o, u);
         if (l == null)
@@ -625,7 +625,7 @@ const lr = Z.exports.jsx, M = Z.exports.jsxs, cr = ({
   return /* @__PURE__ */ M("div", {
     children: [/* @__PURE__ */ M("div", {
       className: "text",
-      children: ["This is test abbas text: ", h]
+      children: ["This is test text: ", h]
     }), /* @__PURE__ */ lr("div", {
       className: "card",
       children: /* @__PURE__ */ M("button", {
@@ -639,7 +639,7 @@ const dr = ({
   text: h
 }) => /* @__PURE__ */ M("div", {
   className: "text",
-  children: ["This is invoice abbas text: ", h]
+  children: ["This is invoice text: ", h]
 });
 export {
   cr as Helloworld,
