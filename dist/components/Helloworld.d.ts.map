@@ -1,1 +1,1 @@
-{"version":3,"file":"Helloworld.d.ts","sourceRoot":"","sources":["Helloworld.tsx"],"names":[],"mappings":"AAEA,UAAU,WAAW;IACnB,IAAI,EAAE,MAAM,CAAA;CACb;AAED,QAAA,MAAM,UAAU,aAAc,WAAW,4CAaxC,CAAA;AAED,eAAe,UAAU,CAAA"}
+{"version":3,"file":"Helloworld.d.ts","sourceRoot":"","sources":["Helloworld.tsx"],"names":[],"mappings":"AAAA,UAAU,WAAW;IACnB,IAAI,EAAE,MAAM,CAAA;CACb;AAED,QAAA,MAAM,UAAU,aAAc,WAAW,4CAaxC,CAAA;AAED,eAAe,UAAU,CAAA"}

@@ -16,7 +16,7 @@ export const InvoiceCreate = () => {
       className={classNames(['border-2', { 'bg-red-100': true }])}
     >
       <button type="button" onClick={() => setCount((count) => count + 1)}>
-        count is: {count}
+        invoice count is: {count}
       </button>
 
       <Helloworld text="sdf" />
