@@ -1,11 +1,11 @@
 import React from 'react'
 
-import { InvoiceTable } from './views/InvoiceTable'
+import { InvoiceCreate } from '@/views'
 
 function App() {
   return (
-    <div className="App">
-      <InvoiceTable />
+    <div className="min-h-screen bg-gray-100">
+      <InvoiceCreate />
     </div>
   )
 }

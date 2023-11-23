@@ -1,10 +1,10 @@
 import React from 'react'
 
-export interface IHelloWorld {
+interface IHelloWorld {
   text: string
 }
 
-export const Helloworld = ({ text }: IHelloWorld) => {
+const Helloworld = ({ text }: IHelloWorld) => {
   const [count, setCount] = React.useState(0)
 
   return (
@@ -18,3 +18,5 @@ export const Helloworld = ({ text }: IHelloWorld) => {
     </div>
   )
 }
+
+export default Helloworld

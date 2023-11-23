@@ -19,7 +19,8 @@
     "declarationMap": true,
     "baseUrl": ".",
     "paths": {
-      "crater-react-sdk": ["src/index.ts"]
+      "crater-react-sdk": ["src/index.ts"],
+      "@/*": ["./src/*"]
     },
     "typeRoots": ["node_modules/@types", "src/index.d.ts"]
   },
